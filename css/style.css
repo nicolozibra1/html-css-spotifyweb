@@ -174,7 +174,7 @@ ul li i{
 }
 
 /* SECTION-RECENTLY */
-.recently{
+.recently, .create-for-you{
   padding:30px 50px;
 }
 .row{
@@ -187,8 +187,14 @@ ul li i{
     flex-direction: column;
     gap: 10px;;
 }
-.recently img{
+.recently img, .create-for-you img{
     width: 100%;
+}
+.create-for-you span{
+    display: inline-block;
+    color: var(--subgrey);
+    font-size: 12px;
+    font-weight: 600;
 }
 .playbar{
     width: 100%;
