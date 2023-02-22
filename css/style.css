@@ -188,7 +188,7 @@ ul li i{
     padding: 15px;
     width: calc(100% / 6);
     flex-direction: column;
-    gap: 10px;;
+    gap: 10px;
 }
 .recently img, .create-for-you img{
     width: 100%;
@@ -277,4 +277,13 @@ ul li i{
     height: 5px;
     background-color: var(--subgrey);
     border-radius: 10px;
+}
+
+/* TRACK-AUDIO */
+.audio-option i{
+    color: white;
+    padding: 0 10px;
+}
+.line-audio{
+    width: 40%;
 }
