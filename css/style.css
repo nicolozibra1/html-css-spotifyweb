@@ -47,6 +47,9 @@ ul{
 .justify-end{
     justify-content: flex-end;
 }
+.justify-center{
+    justify-content: center;
+}
 .align-center{
     align-items: center;
     align-content: center;
@@ -143,9 +146,8 @@ ul li i{
 .main-content{
     width: calc(100% - 230px);
     height: 100%;
-    background-color: grey;
+    background-color: var(--nightblue);
     overflow-y: auto;
-
 }
 .call-to-action{
     position: fixed;
@@ -157,6 +159,14 @@ ul li i{
 }
 .main-section{
     margin-top: 80px;
+}
+
+/* SUGGESTIONS-NAV */
+.music-suggestions ul li a{
+    color: var(--subgrey);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 15px;
 }
 .container{
     border: 1px solid white;
