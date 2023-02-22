@@ -7,14 +7,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
 </head>
 
 <body>
     <div class="wrapper">
+
         <main class="d-flex">
-            <nav class="main-nav"></nav>
+
+            <!-- MAIN-NAV -->
+            <nav class="main-nav d-flex debug">
+                <div class="top-nav">
+                    <!-- LOGO -->
+                    <div class="logo-container debug">
+                        <img src="./img/logo.svg" alt="logo">
+                    </div>
+                    <!-- MAIN-NAV-CONTENT -->
+                    <div class="main-nav-content debug">
+                        <div class="nav-menu p-15 debug">
+                            <ul>
+                                <li><i class="fa-solid fa-house"></i> <a href="#"> Home</a></li>
+                                <li><i class="fa-solid fa-magnifying-glass"></i> <a href="#"> Cerca</a></li>
+                                <li><i class="fa-solid fa-bars-staggered"></i> <a href="#"> La tua libreria</a></li>
+                            </ul>
+                        </div>
+                        <div class="my-playlist  p-15 debug">
+                            <h3>PLAYLIST</h3>
+                            <div class="add-container d-flex debug">
+                                <span class="add-button">+</span>
+                                <span class="add-playlist"><a href="#">Crea playlist</a></span>
+                            </div>
+                            <ul>
+                                <li><a href="#">nome playlist</a></li>
+                                <li><a href="#">nome playlist</a></li>
+                                <li><a href="#">nome playlist</a></li>
+                                <li><a href="#">nome playlist</a></li>
+                                <li><a href="#">nome playlist</a></li>
+                                <li><a href="#">nome playlist</a></li>
+                                <li><a href="#">nome playlist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- MAIN-NAV-BOTTOM -->
+                <div class="bottom-nav p-15 debug">
+                    <span><i class="fa-regular fa-circle-down"></i></span>
+                    <a href="#">Installa app</a>
+                    <hr class="h-nav">
+                    <div class="user-container d-flex align-center">
+                        <div class="user-photo debug">
+                            <img src="./img/myuser-img.jpeg" alt="">
+                        </div>
+                        <span id="username">Nicolò Zibra</span>
+                    </div>   
+                </div>
+            </nav>
+            
+            <!-- MAIN-CONTENT -->
             <section class="main-content">
                 <div class="call-to-action d-flex justify-end align-center">
                     <a href="#" class="btn u-text">Effettua l'upgrade</a>
