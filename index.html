@@ -156,7 +156,7 @@
                 </div>
             </section>
         </main>
-        <div class="playbar d-flex p-15">
+        <div class="playbar d-flex">
             <!-- PLAYING-TRACK -->
             <div class="playing-track d-flex align-center debug">
                 <div class="track-listening d-flex align-center debug">
@@ -172,8 +172,22 @@
                 </div>   
             </div>
             <!-- TRACK-CONTROLS -->
-            <div class="track-controls debug">
-
+            <div class="track-controls d-flex justify-center align-center debug">
+                <div class="top-controls d-flex align-center">
+                    <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                    <a id="circle-play" href="#"><i class="fa-regular fa-circle-play"></i></a>
+                    <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                    <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
+                </div>
+                <div class="bottom-controls debug d-flex">
+                    <span>0:25</span>
+                    <div class="line-time d-flex align-center debug">
+                        <div class="getlisten"></div>
+                        <div class="notlisten"></div>
+                    </div>
+                    <span>4:35</span>
+                </div>
             </div>
             <!-- TRACK-AUDIO -->
             <div class="audio-controls debug">

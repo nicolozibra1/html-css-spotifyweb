@@ -216,7 +216,10 @@ ul li i{
     width: 100%;
     height: 90px;
     background-color: var(--bg-footer);
+    padding: 0 15px;
 }
+
+/* PLAYING-TRACK */
 .playing-track, .audio-controls{
     width: 25%;
 }
@@ -242,4 +245,36 @@ ul li i{
 
 }
 
-/* il footer sta dentro wrapper */
+/* TRACK-CONTROLS */
+.track-controls{
+    flex-direction: column;
+    gap: 10px;
+}
+.top-controls a i{
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+#circle-play i{
+    font-size: 2rem;
+}
+.bottom-controls, .line-time{
+    width: 75%;
+    justify-content: space-around;
+}
+.bottom-controls > span{
+    font-weight: 600;
+    font-size: 14px;
+}
+.getlisten{
+    width:20%;
+    height: 5px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+.notlisten{
+    width: 80%;
+    height: 5px;
+    background-color: var(--subgrey);
+    border-radius: 10px;
+}
