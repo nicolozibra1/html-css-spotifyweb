@@ -251,8 +251,13 @@ ul li i{
     font-weight: 600;
     font-size: 14px;
 }
-.cover-image{
+.cover-image, circle.photo{
     position: relative;
+    scale:1;
+    transition: scale 1s;
+}
+.col:hover .cover-image, .col:hover .circle-photo{
+    scale:1.1;
 }
 .cover-image::after, .circle-photo::after{
     content: "\f144";
