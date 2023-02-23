@@ -201,11 +201,37 @@ ul li i{
     width: calc(100% / 6);
     flex-direction: column;
     gap: 10px;
+    cursor:pointer;
 }
 .col > span{
     color: var(--subgrey);
     font-weight: 600;
     font-size: 14px;
+}
+.cover-image{
+    position: relative;
+}
+.cover-image::after, .circle-photo::after{
+    content: "\f144";
+    font-family: 'Font Awesome 6 Free';
+    font-size: 3rem;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col:hover .cover-image::after{
+    opacity: 1;
+}
+.circle-photo:hover::after{
+    opacity: 1;
 }
 .recently img, .create-for-you img{
     width: 70%;
@@ -215,6 +241,7 @@ ul li i{
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
+    position: relative;
 }
 .popular img{
     width: 100%;
