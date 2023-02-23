@@ -173,6 +173,7 @@ ul li i{
     width: calc(100% - 300px);
     height: 80px;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
 .main-section{
     margin-top: 80px;
