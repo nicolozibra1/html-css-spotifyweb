@@ -330,7 +330,9 @@ ul li i{
     margin-right: 10px;
     cursor: pointer;
     font-size: 1.1rem;
-
+}
+.track-option i:hover{
+    color: white;
 }
 
 /* TRACK-CONTROLS */
@@ -345,6 +347,10 @@ ul li i{
 }
 #circle-play i{
     font-size: 2rem;
+    scale: 1;
+}
+#circle-play i:hover{
+    scale:1.2;
 }
 .bottom-controls, .line-time{
     width: 75%;
@@ -371,6 +377,7 @@ ul li i{
 .audio-option i{
     color: white;
     padding: 5px 10px;
+    cursor: pointer;
 }
 .line-audio{
     width: 40%;
