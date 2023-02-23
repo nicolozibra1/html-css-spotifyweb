@@ -115,6 +115,9 @@ ul li i{
 .nav-menu ul li:hover a, .nav-menu ul li:hover i{
     color: white;
 }
+.current-menu{
+    border-left: 3px solid var(--lime);
+}
 #a-select{
     color:white;
 }
@@ -211,6 +214,9 @@ ul li i{
 }
 
 /* SUGGESTIONS-NAV */
+.music-suggestions{
+    max-height: 50px;
+}
 .music-suggestions ul li a{
     color: var(--subgrey);
     font-weight: 600;
@@ -218,6 +224,10 @@ ul li i{
     padding: 0 15px;
 }
 .music-suggestions ul li a:hover{
+    border-bottom: 3px solid var(--lime);
+    color: white;
+}
+#current-sug{
     border-bottom: 3px solid var(--lime);
     color: white;
 }
