@@ -60,6 +60,9 @@ ul{
     align-items: center;
     align-content: center;
 }
+.f-wrap{
+    flex-wrap: wrap;
+}
 
 /* CONTENT */
 .wrapper{
@@ -87,7 +90,11 @@ main{
 .logo-container{
     padding:15px 30px 15px 20px;
 }
-.logo-container > img{
+.logo-small{
+    padding:20px 0 0 25px;
+    display: none;
+}
+.logo-container img, .logo-small img{
     width: 70%;
 }
 .nav-menu ul li a, .my-playlist ul li a{
@@ -245,7 +252,8 @@ ul li i{
     font-size: 12px;
 }
 .track-option{
-    padding: 0 50px;
+    padding: 0 25px;
+    width: 100%;
 }
 .track-option i{
     display: inline-flex;
@@ -292,8 +300,88 @@ ul li i{
 /* TRACK-AUDIO */
 .audio-option i{
     color: white;
-    padding: 0 10px;
+    padding: 5px 10px;
 }
 .line-audio{
     width: 40%;
+}
+.audio-more{
+    visibility:hidden;
+    margin: auto;
+    font-size: 1.2rem;
+}
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px){
+    .col{
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (max-width: 992px){
+    .col{
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .col{
+        width: calc(100% / 2);
+    }
+    .track-option, .audio-option{
+        flex-flow: column wrap;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .main-nav{
+        width: 60px;
+    }
+    .main-content{
+        width: calc(100% - 60px);
+    }
+    .nav-menu ul li a,
+     .my-playlist, 
+     .bottom-nav a, 
+     .bottom-nav hr, 
+     #username,
+     .myplaylist,
+     .logo-container,
+     .audio-option, 
+     .line-audio, 
+     .track-option{
+        display: none;
+    }
+    .user-container{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .user-small{
+        min-width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .logo-small, .user-photo img{
+        display: block;
+    }
+    .audio-more{
+        visibility: visible;
+    }
+    .audio-more a i{
+        color: white;
+    }
+    .playbar{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .col{
+        width: 100%;
+    }
+    .track-option{
+        display: none;
+    }
 }
