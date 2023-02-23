@@ -197,6 +197,15 @@ ul li i{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
+.call-to-action a{
+    scale: 0.8;
+    transition: scale 0.3s;
+}
+.call-to-action a:hover{
+    scale: 1;
+    font-weight: 600;
+    border-color: var(--lime);
+}
 .main-section{
     margin-top: 80px;
 }
