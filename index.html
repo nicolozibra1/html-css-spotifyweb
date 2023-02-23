@@ -179,10 +179,10 @@
             <!-- PLAYING-TRACK -->
             <div class="playing-track d-flex align-center debug">
                 <div class="track-listening d-flex align-center debug">
-                    <img src="./img/sinister.jpeg" alt="">
+                    <img src="./img/lazza-cenere.jpeg" alt="">
                     <div class="track-name p-15">
-                        <h5>Sinister</h5>
-                        <span>Brano Nome</span>
+                        <h5>Cenere</h5>
+                        <span>Lazza</span>
                     </div>
                     <div class="track-option d-flex align-center debug">
                         <i class="fa-regular fa-heart"></i>
@@ -195,7 +195,7 @@
                 <div class="top-controls d-flex align-center">
                     <a href="#"><i class="fa-solid fa-shuffle"></i></a>
                     <a href="#"><i class="fa-solid fa-backward-step"></i></a>
-                    <a id="circle-play" href="#"><i class="fa-regular fa-circle-play"></i></a>
+                    <a id="circle-play" href="#"><i class="fa-regular fa-circle-play"></i><audio src="./audio/Lazza - Cenere -cut.mp3" type="audio/mp3" controls></audio></a>
                     <a href="#"><i class="fa-solid fa-forward-step"></i></a>
                     <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
                 </div>
@@ -207,6 +207,10 @@
                     </div>
                     <span>4:35</span>
                 </div>
+                <div class="tap-here debug">
+                    <span>Tap Here!</span>
+                    <div class="triangle"></div>
+                </div>
             </div>
             <!-- TRACK-AUDIO -->
             <div class="audio-controls d-flex align-center justify-end debug">
@@ -216,8 +220,7 @@
                     <i class="fa-solid fa-volume-high"></i>
                 </div>
                 <div class="line-audio d-flex align-center debug">
-                    <div class="getlisten"></div>
-                    <div class="notlisten"></div>
+                    <input type="range" min="1" max="100" value="30" class="slider">
                 </div>
                 <div class="audio-more">
                     <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
