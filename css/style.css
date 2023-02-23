@@ -214,9 +214,6 @@ ul li i{
 }
 
 /* SUGGESTIONS-NAV */
-.music-suggestions{
-    max-height: 50px;
-}
 .music-suggestions ul li a{
     color: var(--subgrey);
     font-weight: 600;
