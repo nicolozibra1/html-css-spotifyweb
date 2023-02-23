@@ -107,12 +107,29 @@ ul li i{
     color: lightgrey;
     font-size: 1.3rem;
     padding-right: 10px;
+    padding-left: 25px;
+}
+.nav-menu ul li:hover{
+    border-left: 3px solid var(--lime);
+}
+.nav-menu ul li:hover a, .nav-menu ul li:hover i{
+    color: white;
 }
 #a-select{
     color:white;
 }
+.my-playlist ul li a:hover{
+    color: white;
+}
 .add-container{
     padding: 15px 0;
+}
+.add-container:hover .add-button{
+    background-color: white;
+    scale: 1.2;
+}
+.add-container:hover .add-playlist a{
+    color: white;
 }
 .add-button{
     width: 40px;
@@ -137,6 +154,9 @@ ul li i{
     font-size: 14px;
     padding-bottom: 10px;
 }
+.bottom-nav a:hover{
+    color: white;
+}
 .h-nav{
     height: 1px;
     background-color: var(--subgrey);
@@ -148,6 +168,7 @@ ul li i{
     height: 40px;
     border-radius: 50%;
     overflow: hidden;
+    cursor: pointer;
 }
 .user-photo > img{
     width: 100%;
@@ -157,6 +178,7 @@ ul li i{
 #username{
     font-weight: 600;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 /* MAIN-CONTENT */
@@ -185,6 +207,10 @@ ul li i{
     font-weight: 600;
     text-transform: uppercase;
     padding: 0 15px;
+}
+.music-suggestions ul li a:hover{
+    border-bottom: 3px solid var(--lime);
+    color: white;
 }
 .container{
     padding:15px;
