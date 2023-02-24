@@ -46,6 +46,21 @@ a{
 ul{
     list-style: none;
 }
+
+/* SCROLLBAR CUSTOM */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
 /* FLEX */
 .d-flex{
     display: flex;
@@ -87,6 +102,9 @@ main{
     flex-direction: column;
     justify-content: space-between;
 }
+.main-nav-content{
+    height: 65vh;
+}
 .logo-container{
     padding:15px 30px 15px 20px;
 }
@@ -120,6 +138,11 @@ ul li i{
 }
 #a-select{
     color:white;
+}
+.my-playlist{
+    width: 300px;
+    height: 85%;
+    overflow: auto;
 }
 .my-playlist ul li a:hover{
     color: white;
