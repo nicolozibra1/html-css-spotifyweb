@@ -323,7 +323,7 @@ ul li i{
 .circle-photo:hover::after{
     opacity: 1;
 }
-.recently img, .create-for-you img{
+.cover-image img, .create-for-you img{
     width: 70%;
 }
 .circle-photo{
@@ -577,6 +577,8 @@ audio{
 .col-number{
     width: 5%;
     text-align: center;
+    font-weight: 600;
+    color: var(--subgrey);
 }
 .col-title{
     width: 90%;
@@ -584,6 +586,8 @@ audio{
 .col-duration{
     width: 5%;
     text-align: center;
+    font-weight: 600;
+    color: var(--subgrey);
 }
 #hr-track{
     height: 1px;
@@ -594,12 +598,44 @@ audio{
 }
 #track-name{
     display: block;   
-    font-weight: 500; 
+    font-size: 0.9rem;
+    font-weight: 600; 
     padding-bottom: 5px;
 }
 #artist-name{
     display: inline-block;
     color: var(--subgrey);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* DISCLAIMER */
+.disclaimer{
+    padding: 20px 0;
+
+}
+.disclaimer > span{
+    color: var(--subgrey);
+    display: block;
+    font-weight: 600;
+}
+#date-release{
+    font-size: 0.9rem;
+}
+#copyright, #copyright i{
+    font-size: 0.7rem;
+}
+
+/* RELATED */
+
+.related .col{
+    width: calc(100% / 8);
+}
+.rel-info, .rel-info-year{
+    padding-left: 30px;
+}
+.related img{
+    border-radius: 5px;
 }
 /* RESPONSIVE */
 
