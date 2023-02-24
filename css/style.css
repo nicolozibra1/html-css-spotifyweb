@@ -253,14 +253,18 @@ ul li i{
     font-weight: 600;
     text-transform: uppercase;
     padding: 0 15px;
+    scale:0.8;
+    transition: scale 0.5s;
 }
 .music-suggestions ul li a:hover{
     border-bottom: 3px solid var(--lime);
     color: white;
+    scale: 1;
 }
 #current-sug{
     border-bottom: 3px solid var(--lime);
     color: white;
+    scale:1;
 }
 .container{
     padding:15px;
