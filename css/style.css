@@ -301,7 +301,23 @@ ul li i{
 .col:hover .cover-image, .col:hover .circle-photo{
     scale:1.1;
 }
-.cover-image::after, .circle-photo::after{
+.cover-image::after{
+    content: "\f144";
+    font-family: 'Font Awesome 6 Free';
+    font-size: 3rem;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 100%;
+    transition: opacity 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-photo::after{
     content: "\f144";
     font-family: 'Font Awesome 6 Free';
     font-size: 3rem;
