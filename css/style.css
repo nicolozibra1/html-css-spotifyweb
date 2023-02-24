@@ -489,6 +489,54 @@ audio{
     margin: auto;
     font-size: 1.2rem;
 }
+
+/* PAGES - MILANO DEMONS */
+.main-milano-demons{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(130,49,49,1) 70%, rgba(250,87,54,1) 100%);
+}
+.album-info-container{
+    justify-content: flex-start;
+    height: 250px;
+}
+.album-photo{
+    width: 250px;
+    height: 250px;
+}
+.album-photo > img{
+    width: 100%;
+}
+.album-details{
+    flex-direction: column;
+    padding-top: 80px;
+}
+.album-details > h1{
+    font-size:6rem;
+    font-weight: 900;
+    letter-spacing: -5px;
+}
+.album-duration{
+    padding-top:20px;
+}
+.artist-photo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.artist-photo > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.album-duration > p{
+    padding-left: 5px;
+    font-size: 14px;;
+}
+#dur-time{
+    color: lightgrey;
+}
 /* RESPONSIVE */
 
 @media screen and (max-width: 1200px){

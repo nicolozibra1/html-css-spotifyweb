@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Spotify</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <main class="d-flex">
+
+            <!-- MAIN-NAV -->
+            <nav class="main-nav d-flex">
+                <div class="top-nav">
+                    <!-- LOGO -->
+                    <div class="logo-container">
+                        <img src="../img/logo.svg" alt="logo">
+                    </div>
+                    <div class="logo-small">
+                        <img src="../img/logo-small.svg" alt="logo-small">
+                    </div>
+                    <!-- MAIN-NAV-CONTENT -->
+                    <div class="main-nav-content">
+                        <div class="nav-menu">
+                            <ul>
+                                <li class="current-menu"><i class="fa-solid fa-house text-white"></i> <a id="a-select" href="#"> Home</a></li>
+                                <li><i class="fa-solid fa-magnifying-glass"></i> <a href="#"> Cerca</a></li>
+                                <li><i class="fa-solid fa-bars-staggered"></i> <a href="#"> La tua libreria</a></li>
+                            </ul>
+                        </div>
+                        <div class="my-playlist  p-15-25">
+                            <h3>PLAYLIST</h3>
+                            <div class="add-container d-flex">
+                                <span class="add-button">+</span>
+                                <span class="add-playlist"><a href="#">Crea playlist</a></span>
+                            </div>
+                            <ul>
+                                <li><a href="#">Il caffè del Buongiorno</a></li>
+                                <li><a href="#">Workout Motivation</a></li>
+                                <li><a href="#">Sanremo 2023</a></li>
+                                <li><a href="#">Novità Pop</a></li>
+                                <li><a href="#">Street Culto</a></li>
+                                <li><a href="#">Alta Rotazione</a></li>
+                                <li><a href="#">Raptopia</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- MAIN-NAV-BOTTOM -->
+                <div class="bottom-nav p-15-25">
+                    <span><i class="fa-regular fa-circle-down"></i></span>
+                    <a href="#">Installa app</a>
+                    <hr class="h-nav">
+                    <div class="user-container d-flex align-center">
+                        <div class="user-photo user-small">
+                            <img src="../img/myuser-img.jpeg" alt="">
+                        </div>
+                        <span id="username">Nicolò Zibra</span>
+                    </div>   
+                </div>
+            </nav>
+
+            <!-- MAIN-CONTENT -->
+            <section class="main-content main-milano-demons debug">
+                <div class="call-to-action d-flex justify-end align-center p-15-25">
+                    <a href="#" class="btn u-text">Effettua l'upgrade</a>
+                </div>
+                <div class="main-section p-15-25 debug">
+                    <div class="album-info-container d-flex align-center debug">
+                        <div class="album-photo">
+                            <img src="../img/my-milanodemons.jpeg" alt="">
+                        </div>
+                        <div class="album-details d-flex p-15-25 debug">
+                            <h5>ALBUM</h5>
+                            <h1>Milano Demons</h1>
+                            <div class="album-duration d-flex align-center debug">
+                                <div class="artist-photo user-small">
+                                    <img src="../img/shiva-profile.jpeg" alt="">
+                                </div>
+                                <p><strong>Shiva</strong> <strong>&bull;</strong> 2022 <strong>&bull;</strong> <span id="dur-time">18 brani, 53min 27sec.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                    <!-- MAIN-CONTAINER -->           
+        </main>
+        <div class="playbar d-flex">
+            <!-- PLAYING-TRACK -->
+            <div class="playing-track d-flex align-center">
+                <div class="track-listening d-flex align-center">
+                    <img src="./img/lazza-cenere.jpeg" alt="">
+                    <div class="track-name p-15">
+                        <h5>Cenere</h5>
+                        <span>Lazza</span>
+                    </div>
+                    <div class="track-option d-flex align-center">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+                </div>   
+            </div>
+            <!-- TRACK-CONTROLS -->
+            <div class="track-controls d-flex justify-center align-center">
+                <div class="top-controls d-flex align-center">
+                    <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                    <a id="circle-play" href="#"><i class="fa-regular fa-circle-play"></i><audio src="./audio/Lazza - Cenere -cut.mp3" type="audio/mp3" controls></audio></a>
+                    <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                    <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
+                </div>
+                <div class="bottom-controls d-flex">
+                    <span>0:25</span>
+                    <div class="line-time d-flex align-center">
+                        <div class="getlisten"></div>
+                        <div class="notlisten"></div>
+                    </div>
+                    <span>4:35</span>
+                </div>
+                <div class="tap-here">
+                    <span>Tap Here!</span>
+                    <div class="triangle"></div>
+                </div>
+            </div>
+            <!-- TRACK-AUDIO -->
+            <div class="audio-controls d-flex align-center justify-end">
+                <div class="audio-option d-flex">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="line-audio d-flex align-center">
+                    <input type="range" min="1" max="100" value="30" class="slider">
+                </div>
+                <div class="audio-more">
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
