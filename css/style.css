@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-.debug{
+/* .debug{
     border: 2px solid red;
-}
+} */
 :root{
     --darkblack: #000000;
     --nightblue: #141922;
@@ -90,13 +90,13 @@ ul{
 main{
     height: calc(100% - 90px);
     width: 100%;
-    background-color: green;
+    background-color: var(--nightblue);
     overflow: hidden;
 }
 
 /* MAIN-NAV */
 .main-nav{
-    width: 300px;
+    width: 250px;
     height: 100%;
     min-height: 480px;
     background-color: var(--darkblack);
@@ -108,6 +108,7 @@ main{
 }
 .main-nav-content{
     height: 65vh;
+    padding-top:20px;
 }
 .logo-container{
     padding:15px 30px 15px 20px;
@@ -220,7 +221,7 @@ ul li i{
 
 /* MAIN-CONTENT */
 .main-content{
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     height: 100%;
     background-color: var(--nightblue);
     overflow-y: auto;
@@ -229,8 +230,8 @@ ul li i{
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 300px);
-    height: 80px;
+    width: calc(100% - 250px);
+    height: 70px;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
