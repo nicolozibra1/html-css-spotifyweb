@@ -43,6 +43,9 @@ a{
 .p-15-25{
     padding: 15px 25px;
 }
+.m-bottom10{
+    margin-bottom: 20px;
+}
 ul{
     list-style: none;
 }
@@ -499,6 +502,9 @@ audio{
     background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(130,49,49,1) 70%, rgba(250,87,54,1) 100%);
 }
 .album-info-container{
+    margin-top: 70px;
+}
+.album-info{
     justify-content: flex-start;
     height: 250px;
 }
@@ -564,6 +570,37 @@ audio{
     color: black;
 }
 
+/* ALBUM-TRACKLIST */
+.row-legend div{
+    color: var(--subgrey);
+}
+.col-number{
+    width: 5%;
+    text-align: center;
+}
+.col-title{
+    width: 90%;
+}
+.col-duration{
+    width: 5%;
+    text-align: center;
+}
+#hr-track{
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.514);
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;;
+}
+#track-name{
+    display: block;   
+    font-weight: 500; 
+    padding-bottom: 5px;
+}
+#artist-name{
+    display: inline-block;
+    color: var(--subgrey);
+}
 /* RESPONSIVE */
 
 @media screen and (max-width: 1200px){
