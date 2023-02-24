@@ -501,6 +501,9 @@ audio{
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(130,49,49,1) 70%, rgba(250,87,54,1) 100%);
 }
+.m-d-shiva{
+    background-color: rgba(250, 87, 54, 0.171);
+}
 .album-info-container{
     margin-top: 70px;
 }
