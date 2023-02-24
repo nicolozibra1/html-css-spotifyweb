@@ -97,10 +97,14 @@ main{
 /* MAIN-NAV */
 .main-nav{
     width: 300px;
+    height: 100%;
     min-height: 480px;
     background-color: var(--darkblack);
     flex-direction: column;
     justify-content: space-between;
+}
+.top-nav{
+    height: calc(100% - 100px);
 }
 .main-nav-content{
     height: 65vh;
@@ -141,7 +145,10 @@ ul li i{
 }
 .my-playlist{
     width: 300px;
-    height: 85%;
+    height: 80%;
+}
+.my-playlist ul{
+    height: 60%;
     overflow: auto;
 }
 .my-playlist ul li a:hover{
@@ -173,6 +180,10 @@ ul li i{
     padding: 10px 10px;
     color: var(--subgrey);
     font-weight: 600;
+}
+.bottom-nav{
+    height: 100px;
+    background-color: black;
 }
 .bottom-nav > a, i{
     color: var(--subgrey);
