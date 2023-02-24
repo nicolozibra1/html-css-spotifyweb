@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* .debug{
+.debug{
     border: 2px solid red;
-} */
+}
 :root{
     --darkblack: #000000;
     --nightblue: #141922;
@@ -491,6 +491,8 @@ audio{
 }
 
 /* PAGES - MILANO DEMONS */
+
+/* ALBUM-INFO-CONTAINER */
 .main-milano-demons{
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(130,49,49,1) 70%, rgba(250,87,54,1) 100%);
@@ -537,6 +539,30 @@ audio{
 #dur-time{
     color: lightgrey;
 }
+
+/* SHORT-COMMANDS */
+.short-commands{
+    padding-top: 40px;
+}
+.short-commands > i{
+    font-size: 1.8rem;
+    padding-left: 25px;
+    padding-top: 12px;
+}
+.playcasual{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--lime);
+    position: relative;
+}
+.playcasual span{
+    font-size: 1.8rem;
+    position: absolute;
+    transform: rotate(-90deg);
+    color: black;
+}
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 1200px){
