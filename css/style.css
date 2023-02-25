@@ -23,6 +23,13 @@ a{
     text-decoration: none;
     display: inline-block;
 }
+.text-underline:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.light-on:hover{
+    color: white;
+}
 .btn{
     padding: 10px 30px;
     border: 1px solid white;
@@ -588,10 +595,28 @@ audio{
     transform: rotate(-90deg);
     color: black;
 }
+.playcasual:hover, .playcausal span:hover{
+    scale:1.1;
+    cursor: pointer;
+}
 
 /* ALBUM-TRACKLIST */
 .row-legend div{
     color: var(--subgrey);
+}
+.row-track:hover{
+    background-color: rgba(61, 55, 55, 0.603);
+    border-radius: 5px;
+}
+.row-track:hover #artist-name{
+    color: white;
+    font-weight: 00;
+}
+.row-track:hover #number{
+    display: none;
+}
+.row-track:hover .playthis{
+    display:block;
 }
 .col-number{
     width: 5%;
@@ -599,14 +624,27 @@ audio{
     font-weight: 600;
     color: var(--subgrey);
 }
+.playthis{
+    display: none;
+    padding-top:5px;
+    color: white;
+}
 .col-title{
-    width: 90%;
+    width: 85%;
 }
 .col-duration{
-    width: 5%;
+    width: 10%;
     text-align: center;
     font-weight: 600;
     color: var(--subgrey);
+    justify-content: space-around;
+}
+.col-duration i{
+    padding-bottom:0;
+    opacity: 0;
+}
+.row-track:hover .col-duration i{
+    opacity: 1;
 }
 #hr-track{
     height: 1px;
@@ -620,12 +658,22 @@ audio{
     font-size: 0.9rem;
     font-weight: 600; 
     padding-bottom: 5px;
+    padding-top: 10px;
+}
+#track-name:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 #artist-name{
     display: inline-block;
     color: var(--subgrey);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
+    padding-bottom:10px;
+}
+#artist-name:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* DISCLAIMER */
@@ -694,6 +742,9 @@ audio{
     line-height: 40px;
     font-size: 1rem
 }
+.social-container:hover{
+    background-color:  rgba(206, 205, 205, 0.521);
+}
 .con-term ul li a{
     color: var(--subgrey);
     padding: 0 20px 0 0;
@@ -704,10 +755,16 @@ audio{
     justify-content: space-between;
     padding-bottom: 40px;
 }
-.copyright-pages-album span{
+.copyright-pages-album a{
     color: var(--subgrey);
     font-size: 14px;
     font-weight: 600;
+}
+.copyright-pages-album:hover a, .copyright-pages-album:hover i{
+    color: var(--lime);
+}
+.copyright-pages-album:hover{
+    scale: 1.1;
 }
 
 /* RESPONSIVE */
