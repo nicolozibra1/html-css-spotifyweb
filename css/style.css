@@ -639,7 +639,7 @@ audio{
     color: var(--subgrey);
     justify-content: space-around;
 }
-.col-duration i{
+.row-track .col-duration i{
     padding-bottom:0;
     opacity: 0;
 }
